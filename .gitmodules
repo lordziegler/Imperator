@@ -1,0 +1,9 @@
+[submodule "kitty"]
+	path = kitty
+	url = git@github.com:lordziegler/Impr-Kitty.git
+[submodule "waybar"]
+	path = waybar
+	url = git@github.com:lordziegler/Spicebar.git
+[submodule "yazi"]
+	path = yazi
+	url = git@github.com:lordziegler/impr-yazi.git

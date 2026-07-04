@@ -6,4 +6,4 @@
 	url = git@github.com:lordziegler/Spicebar.git
 [submodule "yazi"]
 	path = yazi
-	url = git@github.com:lordziegler/impr-yazi.git
+	url = git@github.com:lordziegler/Impr-yazi.git

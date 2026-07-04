@@ -1,112 +1,112 @@
 # Imperator — Universal Color Palette
 
-Tema oscuro cálido inspirado en pantallas CRT ámbar y la estética austera del universo Dune.
-Fondo negro orgánico, texto en dorado suave, jerarquía sintáctica completa para Python, R y Quarto.
+Warm dark theme inspired by amber CRT screens and the austere aesthetic of the Dune universe.
+Organic black background, soft gold text, full syntax hierarchy for Python, R and Quarto.
 
 ---
 
-## Principios de diseño
+## Design Principles
 
-- **Paleta compacta y coherente**: todos los colores pertenecen a una de cuatro familias — dorado/ámbar, verde salvia, añil/acero, púrpura. Sin dispersión cromática arbitraria.
-- **Jerarquía por luminancia y temperatura**: la importancia visual de un token se comunica por brillo; su *tipo* semántico se comunica por temperatura de color (oro → naranja → ámbar → verde → púrpura).
-- **Sin neón**: la saturación máxima se reserva para `#FFD700` (funciones) y `#FF6B2B` (errores). El resto de la paleta es moderado.
-- **Estados inactivos legibles**: los elementos desfocalizados usan colores reducidos pero nunca por debajo de contraste ~4:1 contra el fondo.
-- **Separación semántica sobre decoración**: los colores diferencian *qué es* un token antes de comunicar *cuán importante* es.
+- **Compact, coherent palette**: all colors belong to one of four families — gold/amber, sage green, indigo/steel, purple. No arbitrary chromatic dispersion.
+- **Hierarchy by luminance and temperature**: token visual importance is communicated by brightness; its *type* is communicated by color temperature (gold → orange → amber → green → purple).
+- **No neon**: maximum saturation is reserved for `#FFD700` (functions) and `#FF6B2B` (errors). The rest of the palette is moderate.
+- **Legible inactive states**: unfocused elements use lowered colors but never below roughly 4:1 contrast against the background.
+- **Semantic separation over decoration**: colors differentiate *what a token is* before communicating *how important* it is.
 
 ---
 
-## Espectro de la paleta
+## Palette Spectrum
 
 ```
-oscuro ◄─────────────────────────────────────────────────────► brillante
+dark ◄─────────────────────────────────────────────────────► bright
 
-FONDOS    #0E0C08  #141008  #1A1408  #241C0C  #1E1808
-           Deep    DkEmber  Raised   Hover    Active
+BACKGROUNDS    #0E0C08  #141008  #1A1408  #241C0C  #1E1808
+               Deep    DkEmber  Raised   Hover    Active
 
-TEXTO     #3A2E10  #5E4E28  #766035  #8A7040  #B8860B  #D4A843
-            Dim    LineNum  Comment  Subtle   Muted    Base
+TEXT          #3A2E10  #5E4E28  #766035  #8A7040  #B8860B  #D4A843
+               Dim     LineNum Comment  Subtle   Muted    Base
 
-ÁMBAR     #A07820  #AA9050  #B09030  #C8960C  #F0B030  #D48840  #FFD700
-          Tertiary Keyword  Operator Type     Warm     Number   Primary
+AMBER         #A07820  #AA9050  #B09030  #C8960C  #F0B030  #D48840  #FFD700
+               Tertiary Keyword  Operator Type     Warm     Number   Primary
 
-CONTRASTE #8DB8A0  #72C8B4  #9870A0  #5B8DA8
-           String   Math   Special   Info
-```
-
----
-
-## Roles semánticos — UI
-
-| Rol                  | Nombre            | HEX       | RGB               |
-|----------------------|-------------------|-----------|-------------------|
-| Background           | Deep Void         | `#0E0C08` | 14, 12, 8         |
-| Background Alt       | Dark Ember        | `#141008` | 20, 16, 8         |
-| Background Raised    | Warm Shadow       | `#1A1408` | 26, 20, 8         |
-| Background Hover     | Amber Dust        | `#241C0C` | 36, 28, 12        |
-| Background Active    | Ember Glow        | `#1E1808` | 30, 24, 8         |
-| Foreground           | Amber Light       | `#D4A843` | 212, 168, 67      |
-| Foreground Muted     | Old Gold          | `#B8860B` | 184, 134, 11      |
-| Foreground Subtle    | Tarnished Signal  | `#8A7040` | 138, 112, 64      |
-| Foreground Comment   | Ash Ember         | `#766035` | 118, 96, 53       |
-| Foreground Dim       | Scorched          | `#3A2E10` | 58, 46, 16        |
-| Line Number          | Ember Dust        | `#5E4E28` | 94, 78, 40        |
-| Accent Primary       | Golden Signal     | `#FFD700` | 255, 215, 0       |
-| Accent Secondary     | Amber Pulse       | `#C8960C` | 200, 150, 12      |
-| Accent Tertiary      | Warm Ochre        | `#A07820` | 160, 120, 32      |
-| Accent Warm          | Solar Flare       | `#F0B030` | 240, 176, 48      |
-| String / Safe        | Phosphor Green    | `#8DB8A0` | 141, 184, 160     |
-| Error / Danger       | Plasma Red        | `#FF6B2B` | 255, 107, 43      |
-| Warning              | Caution Amber     | `#C8960C` | 200, 150, 12      |
-| Success / Added      | Radar Green       | `#8DB87A` | 141, 184, 122     |
-| Info / Link          | Signal Blue       | `#5B8DA8` | 91, 141, 168      |
-| Debug / Special      | Violet Static     | `#9870A0` | 152, 112, 160     |
-| Border               | Ember Border      | `#2A2010` | 42, 32, 16        |
-
----
-
-## Roles semánticos — Sintaxis (editores)
-
-Jerarquía de tokens para Python, R y Quarto. El orden refleja prominencia visual descendente.
-
-| Token                      | Nombre          | HEX       | Notas                                    |
-|----------------------------|-----------------|-----------|------------------------------------------|
-| Función (definición)       | Golden Signal   | `#FFD700` | Máxima prominencia; el "token estrella"  |
-| Función (librería std)     | Amber Pulse     | `#C8960C` | Misma familia que tipos, menor brillo    |
-| Método, Enum               | Solar Flare     | `#F0B030` | Subcategoría de callable, itálica opt.   |
-| Tipo, Clase, Struct        | Amber Pulse     | `#C8960C` | Identidades de tipo agrupadas            |
-| Número, Constante literal  | Numeral Filament| `#D48840` | Naranja-ámbar; hue distinto del oro      |
-| Parámetro de función       | Pale Signal     | `#D4B070` | Ámbar claro, itálica; subordinado        |
-| Texto base, Variable       | Amber Light     | `#D4A843` | Fondo semántico del código               |
-| Propiedad                  | Warm Brass      | `#B89050` | Entre muted y base                       |
-| Keyword, Storage           | Directive Amber | `#AA9050` | Control flow visible sin dominar         |
-| Operador                   | Operator Amber  | `#B09030` | Levemente más oscuro que keyword         |
-| String, Regexp             | Phosphor Green  | `#8DB8A0` | Contraste por hue (verde vs ámbar)       |
-| Math inline `$...$`        | Cathode Teal    | `#72C8B4` | Diferencia perceptual clara vs strings   |
-| Variable en math LaTeX     | Pale Signal     | `#D4B070` | Itálica; distinguible dentro de math     |
-| Comentario                 | Ash Ember       | `#766035` | Legible (~5.5:1) sin competir con código |
-| Decorador, Anotación       | Violet Static   | `#9870A0` | El único acento frío; único en su hue    |
-| Namespace, Módulo          | Warm Ochre      | `#A07820` | Subordinado a tipos                      |
-| Delimitador math `$` `$$`  | Golden Signal   | `#FFD700` | Marca inicio/fin de bloque math          |
-
----
-
-## Separación semántica por familia de hue
-
-```
-Oro puro   #FFD700  → funciones propias del usuario
-Ámbar cálido         → tipos (#C8960C), métodos (#F0B030), texto (#D4A843)
-Naranja-ámbar        → números (#D48840)  ← hue ~25°, distinto del ámbar ~38°
-Ámbar pálido         → parámetros (#D4B070), keywords (#AA9050)
-Verde salvia         → strings (#8DB8A0)
-Teal-cian            → math LaTeX (#72C8B4)  ← 20° de Δhue vs strings
-Púrpura              → decoradores (#9870A0)  ← único en toda la paleta
-Azul acero           → info, links (#5B8DA8)
-Rojo-naranja         → errores (#FF6B2B)
+CONTRAST      #8DB8A0  #72C8B4  #9870A0  #5B8DA8
+               String   Math   Special   Info
 ```
 
 ---
 
-## Variables CSS
+## Semantic roles — UI
+
+| Role                 | Name             | HEX       | RGB               |
+|----------------------|------------------|-----------|-------------------|
+| Background           | Deep Void        | `#0E0C08` | 14, 12, 8         |
+| Background Alt       | Dark Ember       | `#141008` | 20, 16, 8         |
+| Background Raised    | Warm Shadow      | `#1A1408` | 26, 20, 8         |
+| Background Hover     | Amber Dust       | `#241C0C` | 36, 28, 12        |
+| Background Active    | Ember Glow       | `#1E1808` | 30, 24, 8         |
+| Foreground           | Amber Light      | `#D4A843` | 212, 168, 67      |
+| Foreground Muted     | Old Gold         | `#B8860B` | 184, 134, 11      |
+| Foreground Subtle    | Tarnished Signal | `#8A7040` | 138, 112, 64      |
+| Foreground Comment   | Ash Ember        | `#766035` | 118, 96, 53       |
+| Foreground Dim       | Scorched         | `#3A2E10` | 58, 46, 16        |
+| Line Number          | Ember Dust       | `#5E4E28` | 94, 78, 40        |
+| Accent Primary       | Golden Signal    | `#FFD700` | 255, 215, 0       |
+| Accent Secondary     | Amber Pulse      | `#C8960C` | 200, 150, 12      |
+| Accent Tertiary      | Warm Ochre       | `#A07820` | 160, 120, 32      |
+| Accent Warm          | Solar Flare      | `#F0B030` | 240, 176, 48      |
+| String / Safe        | Phosphor Green   | `#8DB8A0` | 141, 184, 160     |
+| Error / Danger       | Plasma Red       | `#FF6B2B` | 255, 107, 43      |
+| Warning              | Caution Amber    | `#C8960C` | 200, 150, 12      |
+| Success / Added      | Radar Green      | `#8DB87A` | 141, 184, 122     |
+| Info / Link          | Signal Blue      | `#5B8DA8` | 91, 141, 168      |
+| Debug / Special      | Violet Static    | `#9870A0` | 152, 112, 160     |
+| Border               | Ember Border     | `#2A2010` | 42, 32, 16        |
+
+---
+
+## Semantic roles — Syntax (editors)
+
+Token hierarchy for Python, R and Quarto. Order reflects descending visual prominence.
+
+| Token                      | Name            | HEX       | Notes                                   |
+|----------------------------|-----------------|-----------|-----------------------------------------|
+| Function (definition)      | Golden Signal   | `#FFD700` | Maximum prominence; the "star token"    |
+| Function (stdlib)          | Amber Pulse     | `#C8960C` | Same family as types, lower brightness  |
+| Method, Enum               | Solar Flare     | `#F0B030` | Callable subcategory, italic optional    |
+| Type, Class, Struct        | Amber Pulse     | `#C8960C` | Grouped type identities                 |
+| Number, Constant literal   | Numeral Filament| `#D48840` | Orange-amber; hue distinct from gold    |
+| Function parameter         | Pale Signal     | `#D4B070` | Pale amber, italic; subordinate         |
+| Base text, Variable        | Amber Light     | `#D4A843` | Semantic background of code             |
+| Property                   | Warm Brass      | `#B89050` | Between muted and base                  |
+| Keyword, Storage           | Directive Amber | `#AA9050` | Control flow visible without dominating |
+| Operator                   | Operator Amber  | `#B09030` | Slightly darker than keyword            |
+| String, Regexp             | Phosphor Green  | `#8DB8A0` | Contrast by hue (green vs amber)        |
+| Math inline `$...$`        | Cathode Teal    | `#72C8B4` | Clear perceptual contrast vs strings    |
+| Variable in math LaTeX     | Pale Signal     | `#D4B070` | Italic; distinguishable inside math     |
+| Comment                    | Ash Ember       | `#766035` | Legible (~5.5:1) without competing      |
+| Decorator, Annotation      | Violet Static   | `#9870A0` | The only cool accent; unique in hue     |
+| Namespace, Module          | Warm Ochre      | `#A07820` | Subordinate to types                    |
+| Math delimiter `$` `$$`    | Golden Signal   | `#FFD700` | Marks math block start/end              |
+
+---
+
+## Semantic separation by hue family
+
+```
+Pure gold  #FFD700  → user-defined functions
+Warm amber → types (#C8960C), methods (#F0B030), text (#D4A843)
+Orange-amber → numbers (#D48840)  ← hue ~25°, distinct from amber ~38°
+Pale amber  → parameters (#D4B070), keywords (#AA9050)
+Sage green  → strings (#8DB8A0)
+Teal-cyan   → LaTeX math (#72C8B4)  ← 20° Δhue vs strings
+Purple      → decorators (#9870A0)  ← unique in the palette
+Steel blue  → info, links (#5B8DA8)
+Red-orange → errors (#FF6B2B)
+```
+
+---
+
+## CSS Variables
 
 ```css
 :root {
@@ -152,7 +152,7 @@ Rojo-naranja         → errores (#FF6B2B)
 
 ---
 
-## Variables SCSS
+## SCSS Variables
 
 ```scss
 // Backgrounds
@@ -200,7 +200,7 @@ $crt-border:       #2A2010;
 
 ```ini
 # Imperator CRT — Hyprland colors
-# Formato: 0xAARRGGBB
+# Format: 0xAARRGGBB
 
 general {
     col.active_border         = 0xFFFFD700 0xFFC8960C 45deg
@@ -214,7 +214,7 @@ decoration {
     col.shadow_inactive       = 0x880E0C08
 }
 
-# Para widgets:
+# For widgets:
 # background: #0E0C08   foreground: #D4A843
 # accent:     #FFD700   border:     #C8960C
 # inactive:   #3A3018   subtle:     #8A7040
@@ -419,7 +419,7 @@ element normal.urgent {
 
 ---
 
-## Tokens de diseño (JSON)
+## Design Tokens (JSON)
 
 ```json
 {

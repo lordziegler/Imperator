@@ -1,0 +1,70 @@
+# Imperator — btop theme
+# Based on the Imperator palette (amber/CRT sci-fi)
+# Install in: ~/.config/btop/themes/Imperator.theme
+
+# ── UI base ─────────────────────────────────────────────
+theme[main_bg]="#0E0C08"
+theme[main_fg]="#D4A843"
+theme[title]="#FFD700"
+
+theme[hi_fg]="#FFD700"
+theme[selected_bg]="#C8960C"
+theme[selected_fg]="#0E0C08"
+theme[inactive_fg]="#8A7040"
+theme[graph_text]="#D4A843"
+theme[meter_bg]="#1A1408"
+theme[proc_misc]="#F0B030"
+
+# ── Boxes ────────────────────────────────────────────────
+theme[cpu_box]="#C8960C"
+theme[mem_box]="#B8860B"
+theme[net_box]="#A07820"
+theme[proc_box]="#FFD700"
+
+# ── Divider lines ─────────────────────────────────────────
+theme[div_line]="#2A2010"
+
+# ── CPU (gold → amber → plasma red) ──────────────────────
+theme[cpu_start]="#FFD700"
+theme[cpu_mid]="#C8960C"
+theme[cpu_end]="#FF6B2B"
+
+# ── Temperature (solar flare → amber → plasma red) ────────
+theme[temp_start]="#F0B030"
+theme[temp_mid]="#C8960C"
+theme[temp_end]="#FF6B2B"
+
+# ── Free memory (radar green — intentional contrast) ──────
+theme[free_start]="#8DB87A"
+theme[free_mid]="#5A8A60"
+theme[free_end]="#2A4A30"
+
+# ── Cached memory (old gold → ash ember → scorched) ───────
+theme[cached_start]="#B8860B"
+theme[cached_mid]="#766035"
+theme[cached_end]="#3A2E10"
+
+# ── Available memory (amber light → old gold → ash ember) ─
+theme[available_start]="#D4A843"
+theme[available_mid]="#B8860B"
+theme[available_end]="#766035"
+
+# ── Used memory (gold → amber → plasma red) ───────────────
+theme[used_start]="#FFD700"
+theme[used_mid]="#C8960C"
+theme[used_end]="#FF6B2B"
+
+# ── Network: download (signal blue — functional contrast) ─
+theme[download_start]="#7AAEC8"
+theme[download_mid]="#5B8DA8"
+theme[download_end]="#2A4A60"
+
+# ── Network: upload (gold → amber → ash ember) ────────────
+theme[upload_start]="#FFD700"
+theme[upload_mid]="#C8960C"
+theme[upload_end]="#766035"
+
+# ── Processes (gold → amber → plasma red) ─────────────────
+theme[process_start]="#FFD700"
+theme[process_mid]="#C8960C"
+theme[process_end]="#FF6B2B"

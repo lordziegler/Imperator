@@ -7,3 +7,57 @@
 [submodule "yazi"]
 	path = yazi
 	url = git@github.com:lordziegler/Impr-yazi.git
+[submodule "wlogout"]
+	path = wlogout
+	url = git@github.com:lordziegler/Impr-wlogout.git
+[submodule "theme"]
+	path = theme
+	url = git@github.com:lordziegler/Impr-theme.git
+[submodule "swaync"]
+	path = swaync
+	url = git@github.com:lordziegler/Impr-swaync.git
+[submodule "sddm"]
+	path = sddm
+	url = git@github.com:lordziegler/Impr-sddm.git
+[submodule "satty"]
+	path = satty
+	url = git@github.com:lordziegler/Impr-satty.git
+[submodule "niri"]
+	path = niri
+	url = git@github.com:lordziegler/Impr-niri.git
+[submodule "newsboat"]
+	path = newsboat
+	url = git@github.com:lordziegler/Impr-newsboat.git
+[submodule "konsole"]
+	path = konsole
+	url = git@github.com:lordziegler/Impr-Konsole.git
+[submodule "fastfetch"]
+	path = fastfetch
+	url = git@github.com:lordziegler/Impr-fastfetch.git
+[submodule "cava"]
+	path = cava
+	url = git@github.com:lordziegler/Impr-cava.git
+[submodule "fuzzel"]
+	path = fuzzel
+	url = git@github.com:lordziegler/Impr-fuzzle.git
+[submodule "bat"]
+	path = bat
+	url = git@github.com:lordziegler/Impr-bat.git
+[submodule "broot"]
+	path = broot
+	url = git@github.com:lordziegler/Impr-Broot.git
+[submodule "starship"]
+	path = starship
+	url = git@github.com:lordziegler/Impr-ship.git
+[submodule "zsh"]
+	path = zsh
+	url = git@github.com:lordziegler/zardaukar-sh.git
+[submodule "systemd-user"]
+	path = systemd-user
+	url = git@github.com:lordziegler/Arrakis-sunset.git
+[submodule "btop"]
+	path = btop
+	url = git@github.com:lordziegler/Impr-btop.git
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:lordziegler/Impr-nvim.git

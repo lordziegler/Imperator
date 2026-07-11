@@ -1,63 +1,66 @@
 [submodule "kitty"]
-	path = kitty
+	path = Impr-kitty
 	url = git@github.com:lordziegler/Impr-Kitty.git
 [submodule "waybar"]
-	path = waybar
+	path = Spicebar
 	url = git@github.com:lordziegler/Spicebar.git
 [submodule "yazi"]
-	path = yazi
+	path = Impr-yazi
 	url = git@github.com:lordziegler/Impr-yazi.git
 [submodule "wlogout"]
-	path = wlogout
+	path = Impr-wlogout
 	url = git@github.com:lordziegler/Impr-wlogout.git
 [submodule "theme"]
-	path = theme
+	path = Impr-theme
 	url = git@github.com:lordziegler/Impr-theme.git
 [submodule "swaync"]
-	path = swaync
+	path = Impr-swaync
 	url = git@github.com:lordziegler/Impr-swaync.git
 [submodule "sddm"]
-	path = sddm
+	path = Impr-sddm
 	url = git@github.com:lordziegler/Impr-sddm.git
 [submodule "satty"]
-	path = satty
+	path = Impr-satty
 	url = git@github.com:lordziegler/Impr-satty.git
 [submodule "niri"]
-	path = niri
+	path = Impr-niri
 	url = git@github.com:lordziegler/Impr-niri.git
 [submodule "newsboat"]
-	path = newsboat
+	path = Impr-newsboat
 	url = git@github.com:lordziegler/Impr-newsboat.git
 [submodule "konsole"]
-	path = konsole
+	path = Impr-Konsole
 	url = git@github.com:lordziegler/Impr-Konsole.git
 [submodule "fastfetch"]
-	path = fastfetch
+	path = Impr-fastfetch
 	url = git@github.com:lordziegler/Impr-fastfetch.git
 [submodule "cava"]
-	path = cava
+	path = Impr-cava
 	url = git@github.com:lordziegler/Impr-cava.git
 [submodule "fuzzel"]
-	path = fuzzel
+	path = Impr-fuzzle
 	url = git@github.com:lordziegler/Impr-fuzzle.git
 [submodule "bat"]
-	path = bat
+	path = Impr-bat
 	url = git@github.com:lordziegler/Impr-bat.git
 [submodule "broot"]
-	path = broot
+	path = Impr-Broot
 	url = git@github.com:lordziegler/Impr-Broot.git
 [submodule "starship"]
-	path = starship
+	path = Impr-ship
 	url = git@github.com:lordziegler/Impr-ship.git
 [submodule "zsh"]
-	path = zsh
+	path = zardaukar-sh
 	url = git@github.com:lordziegler/zardaukar-sh.git
 [submodule "systemd-user"]
-	path = systemd-user
+	path = Arrakis-sunset
 	url = git@github.com:lordziegler/Arrakis-sunset.git
 [submodule "btop"]
-	path = btop
+	path = Impr-btop
 	url = git@github.com:lordziegler/Impr-btop.git
 [submodule "nvim"]
-	path = nvim
+	path = Impr-nvim
 	url = git@github.com:lordziegler/Impr-nvim.git
+[submodule "spotify"]
+	path = Impr-spotify
+	url = https://github.com/lordziegler/Impr-spotify.git

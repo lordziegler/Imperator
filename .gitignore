@@ -1,0 +1,8 @@
+# Backups de trabajo — se quedan en disco como red de seguridad,
+# pero fuera del control de versiones.
+*.bak/
+*.bak.*/
+*.bak
+
+# Notas sueltas
+repo.txt

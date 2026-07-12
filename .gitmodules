@@ -67,3 +67,6 @@
 [submodule "osd"]
 	path = Impr-osd
 	url = git@github.com:lordziegler/Impr-osd.git
+[submodule "Impr-vivaldi"]
+	path = Impr-vivaldi
+	url = git@github.com:lordziegler/Impr-vivaldi.git

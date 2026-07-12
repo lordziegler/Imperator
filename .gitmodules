@@ -64,3 +64,6 @@
 [submodule "spotify"]
 	path = Impr-spotify
 	url = https://github.com/lordziegler/Impr-spotify.git
+[submodule "osd"]
+	path = Impr-osd
+	url = git@github.com:lordziegler/Impr-osd.git

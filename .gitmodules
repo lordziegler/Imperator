@@ -73,3 +73,6 @@
 [submodule "Impr-steam"]
 	path = Impr-steam
 	url = https://github.com/lordziegler/Impr-steam.git
+[submodule "Impr-swaylock"]
+	path = Impr-swaylock
+	url = https://github.com/lordziegler/Impr-swaylock.git

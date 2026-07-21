@@ -76,3 +76,6 @@
 [submodule "Impr-swaylock"]
 	path = Impr-swaylock
 	url = https://github.com/lordziegler/Impr-swaylock.git
+[submodule "Impr-proton-niri"]
+	path = Impr-proton-niri
+	url = https://github.com/lordziegler/Impr-proton-niri.git
